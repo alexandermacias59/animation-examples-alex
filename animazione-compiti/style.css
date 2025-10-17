@@ -17,26 +17,82 @@
     height: 50px;
     background-color: royalblue;
     animation-name: movimento;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    
+    animation-play-state: running;
+    border-radius: 5px;
 }
 
 @keyframes movimento{
-    0%{
-        transform: translateY(0px);
-        transform: scale(1);
-    }
-    50%{
-        transform: translateY(500px);
-        transform: scale(0.5);
-    }
-    75%{
-        transform: translateY(500px);
-        transform: scale(1);
-    }
-    100%{
-        transform: translateY(-500px);
-        transform: scale(0.5);
-    }
+    0% {
+    transform: translateY(0) scaleY(1);
+  }
+  25% {
+    transform: translateY(420px) scaleY(0.5); /* schiacciato in alto */
+  }
+  50% {
+    transform: translateY(0) scaleY(1);
+  }
+  75% {
+    transform: translateY(-420px) scaleY(0.5); /* schiacciato in basso */
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
+/* .box1{
+    animation-delay: 0s;
+    background-color: royalblue;
+}
+.box2{
+    animation-delay: 0.5s;
+    background-color: orange;
+}
+.box3{
+    animation-delay: 1s;
+    background-color: yellow;
+}
+.box4{
+    animation-delay: 1.5s;
+    background-color: green;
+}
+.box5{
+    animation-delay: 2s;
+    background-color: blue;
+}
+.box6{
+    animation-delay: 2.5s;
+    background-color: indigo;
+}
+.box7{
+    animation-delay: 3s;
+    background-color: violet;
+}
+.box8{
+    animation-delay: 3.5s;
+    background-color: purple;
+}
+.box9{
+    animation-delay: 4s;
+    background-color: pink;
+}
+.box10{
+    animation-delay: 4.5s;
+    background-color: lightpink;
+}
+.box11{
+    animation-delay: 5s;
+    background-color: lightcoral;
+}
+.box12{
+    animation-delay: 5.5s;
+    background-color: lightseagreen;
+}
+.box13{
+    animation-delay: 6s;
+    background-color: lightblue;
+} */
